@@ -1,3 +1,5 @@
+//header settigs
+
 let functionalLink = document.querySelector('.functionalLink');
 let functional = document.querySelector('.functional');
 functionalLink.addEventListener('click', function(event){
@@ -36,6 +38,38 @@ pricingLink.addEventListener('click', function(event){
 let leaveRequestBtn = document.querySelector('.leaveRequestBtn');
 
 leaveRequestBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    pricing.scrollIntoView(top);
+});
+
+// footer settings
+
+let footerFunctionalLink = document.querySelector('.footerFunctionalLink');
+footerFunctionalLink.addEventListener('click', function(event){
+    event.preventDefault();
+    functional.scrollIntoView(top);
+});
+
+let footerDesignLink = document.querySelector('.footerDesignLink');
+footerDesignLink.addEventListener('click', function(event){
+    event.preventDefault();
+    design.scrollIntoView(top);
+});
+
+let footerSupportAndUpdatesLink = document.querySelector('.footerSupportAndUpdatesLink');
+footerSupportAndUpdatesLink.addEventListener('click', function(event){
+    event.preventDefault();
+    support.scrollIntoView(top);
+});
+
+let footerAdditionalLink = document.querySelector('.footerAdditionalLink');
+footerAdditionalLink.addEventListener('click', function(event){
+    event.preventDefault();
+    addons.scrollIntoView(top);
+});
+
+let footerPricingLink = document.querySelector('.footerPricingLink');
+footerPricingLink.addEventListener('click', function(event){
     event.preventDefault();
     pricing.scrollIntoView(top);
 });

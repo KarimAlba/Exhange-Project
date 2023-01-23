@@ -344,7 +344,7 @@ h5{
 
 .support_description{
     margin: 200px  20px 0 15%;
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-flow: row wrap;
 }
@@ -356,16 +356,25 @@ h5{
 }
 
 .support_description_support-updates button{
-    padding: 0;
-    background: none;
+    width: 100px;
+    position: relative;
+    background:none;
     border: none;
+    z-index: 0;
 }
 
 .support_description_support-updates button a{
+    position: relative;
     color: #FFFFFF;
-    margin: -20px 0 20px -60px;
+    z-index: 2;
 }
 
+.support_description_support-updates button img{
+    top: -8px;
+    left: 15px;
+    position: absolute;
+    z-index: 1;
+}
 
 .addons{
     position: relative;
