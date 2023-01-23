@@ -494,6 +494,67 @@ footer nav{
     margin: 0;
 }
 
+/* Всплывающие элементы */
+
+.modalWindow{
+    width: 35%;
+    height: 350px;
+    background: linear-gradient(180deg, #29297A 0%, #1D1C48 100%);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    padding: 10px 0 0 10px;
+    position: relative;
+}
+
+.modalWindow h3{
+    margin: 0;
+    font-size: 35px;
+}
+
+.modalForm{
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+}
+
+.modalForm input{
+    width: 70%;
+    background-color:#1A1A48;
+    border: none;
+    border-radius: 2px;
+    line-height: 30px;
+    margin-top: 7px;
+    color:#6C6CA9;
+}
+
+.modalForm button{
+    margin:15px 0 0 0;
+    width: 70%;
+    height: 40px;
+    color:#fcfcfe;
+    font-size: 17px;
+}
+
+.closeModalWindow{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 35px;
+    background-color:#1A1A48;
+}
+
+.rate{
+    margin: 90px 0 0 -40px;
+}
+
+.mainInfoRate{
+    font-size: 22px;
+    color:#FF9FA5;
+}
 
 @media all and (min-width: 1650px ){
     header img,
@@ -513,8 +574,6 @@ footer nav{
         width: 300px;
     }
 
-
-    
     .block-styles_description h2{
         font-size: 120px;
         line-height: 130px;

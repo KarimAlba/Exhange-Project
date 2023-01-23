@@ -73,3 +73,30 @@ footerPricingLink.addEventListener('click', function(event){
     event.preventDefault();
     pricing.scrollIntoView(top);
 });
+
+function renderDiv(className) {
+    let newDiv = document.createElement('div');
+    newDiv.classList.add(className);
+}
+
+function renderModalWindowDiv() {
+    renderDiv("modalWindow");
+    renderDiv("rate");
+}
+
+function renderForm(className) {
+    let newForm = document.createElement('form');
+    newForm.classList.add(className);
+}
+
+function renderModalWindowForm() {
+    renderForm("modalForm");
+}
+
+function renderTitle(type) {
+    document.createElement(type);
+}
+
+function renderModalWindowH3() {
+    renderTitle("h3");
+}
