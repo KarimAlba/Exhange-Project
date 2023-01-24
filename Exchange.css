@@ -497,6 +497,7 @@ footer nav{
 /* Всплывающие элементы */
 
 .modalWindow{
+    margin: 10% 0 0 35%;
     width: 35%;
     height: 350px;
     background: linear-gradient(180deg, #29297A 0%, #1D1C48 100%);
@@ -504,7 +505,9 @@ footer nav{
     border-radius: 10px;
     display: flex;
     padding: 10px 0 0 10px;
-    position: relative;
+    position: fixed;
+    display: none;
+    z-index: 4;
 }
 
 .modalWindow h3{
@@ -534,6 +537,7 @@ footer nav{
     height: 40px;
     color:#fcfcfe;
     font-size: 17px;
+    cursor: pointer;
 }
 
 .closeModalWindow{
@@ -545,6 +549,7 @@ footer nav{
     border: none;
     border-radius: 35px;
     background-color:#1A1A48;
+    cursor: pointer;
 }
 
 .rate{
@@ -554,6 +559,18 @@ footer nav{
 .mainInfoRate{
     font-size: 22px;
     color:#FF9FA5;
+}
+
+
+.stopActions{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0603437f;
+    z-index: 3;
 }
 
 @media all and (min-width: 1650px ){

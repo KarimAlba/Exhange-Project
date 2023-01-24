@@ -35,13 +35,6 @@ pricingLink.addEventListener('click', function(event){
     pricing.scrollIntoView(top);
 });
 
-let leaveRequestBtn = document.querySelector('.leaveRequestBtn');
-
-leaveRequestBtn.addEventListener('click', function(event){
-    event.preventDefault();
-    pricing.scrollIntoView(top);
-});
-
 // footer settings
 
 let footerFunctionalLink = document.querySelector('.footerFunctionalLink');
@@ -74,29 +67,29 @@ footerPricingLink.addEventListener('click', function(event){
     pricing.scrollIntoView(top);
 });
 
-function renderDiv(className) {
-    let newDiv = document.createElement('div');
-    newDiv.classList.add(className);
-}
+// Open/close model window 
 
-function renderModalWindowDiv() {
-    renderDiv("modalWindow");
-    renderDiv("rate");
-}
+let leaveRequestBtn = document.querySelector('.leaveRequestBtn');
+let stopActions = document.querySelector('.stopActions');
+let modalWindow = document.querySelector('.modalWindow');
 
-function renderForm(className) {
-    let newForm = document.createElement('form');
-    newForm.classList.add(className);
-}
+leaveRequestBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    stopActions.style.display = 'block';
+    modalWindow.style.display = 'flex';
+});
 
-function renderModalWindowForm() {
-    renderForm("modalForm");
-}
+let sendBtn = document.querySelector('.sendBtn');
+let closingBtn = document.querySelector('.closeModalWindow');
 
-function renderTitle(type) {
-    document.createElement(type);
-}
+closingBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    stopActions.style.display = 'none';
+    modalWindow.style.display = 'none';
+});
 
-function renderModalWindowH3() {
-    renderTitle("h3");
-}
+sendBtn.addEventListener('submit', function(event){
+    event.preventDefault();
+    stopActions.style.display = 'none';
+    modalWindow.style.display = 'none';
+});
